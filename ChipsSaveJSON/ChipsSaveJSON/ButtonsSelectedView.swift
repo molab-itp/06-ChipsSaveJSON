@@ -11,7 +11,7 @@ struct ButtonsSelectedView: View {
     var item: ItemModel
     
     @EnvironmentObject var document: Document
-
+    
     var body: some View {
         VStack {
             Text("x \(item.x) y \(item.y) color \(item.colorName)")
@@ -38,6 +38,7 @@ struct ButtonsSelectedView: View {
             }
             .padding(5)
             .background(Color.gray)
+        }
     }
 }
 
@@ -47,5 +48,4 @@ struct ButtonsSelectedView_Previews: PreviewProvider {
         ButtonsSelectedView(item: ItemModel())
             .environmentObject(document)
     }
-}
 }
