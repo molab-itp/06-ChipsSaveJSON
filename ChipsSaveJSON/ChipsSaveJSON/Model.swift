@@ -32,15 +32,15 @@ struct Model: Codable {
 }
 
 struct ItemModel: Identifiable, Hashable, Encodable, Decodable {
-    var label: String = "red"
+    var id: Int = 0
+    var colorNum: Int = 0xFFFF0000
     var x: Int = 100
     var y: Int = 100
     var width: Int = 50
     var height: Int = 50
-    var colorNum: Int = 0xFFFF0000
     var rotation: Double = 0.0
+    var label: String = "red"   // Not used yet
     var selected: Bool = false
-    var id: Int = 0
     var assetName: String = ""
     
     var colorName: String {

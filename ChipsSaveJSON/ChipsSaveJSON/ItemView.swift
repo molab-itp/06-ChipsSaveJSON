@@ -52,7 +52,7 @@ struct ItemView: View {
             //  .onTapGesture {
             //  document.select(id: item.id, state: !item.selected)
             //  }
-            if (item.assetName != "") {
+            if !item.assetName.isEmpty {
                 Image(item.assetName)
             }
             if document.selectedId != 0 {
