@@ -19,30 +19,41 @@ struct ContentView: View {
                         print("ContentView onTapGesture")
                         document.clearSelection()
                     }
-                VStack {
-                    if document.items.isEmpty {
-                        Spacer()
+                // ChipsCanvasView(document: document, rect: rect)
+                ChipsCanvasView(rect: rect)
+                    .padding(20)
+                    .onAppear() {
+                        // document.addInitalItem(rect: rect)
                     }
-                    else {
-                        ZStack {
-                            ForEach(document.items) { item in
-                                ItemDragView(item: item)
-                            }
-                        }
-                    }
-                    if let item = document.selectedItem {
-                        ButSelectedView(item: item)
-                    }
-                    ButBottomView(rect: rect)
-                }
-                .padding(20)
-                .onAppear() {
-                    // document.addInitalItem(rect: rect)
-                }
             }
         }
     }
 }
+
+struct ChipsCanvasView: View {
+    @EnvironmentObject var document: Document
+    // @StateObject var document: Document
+    var rect: CGRect
+    var body: some View {
+        VStack {
+            if document.items.isEmpty {
+                Spacer()
+            }
+            else {
+                ZStack {
+                    ForEach(document.items) { item in
+                        ItemDragView(item: item)
+                    }
+                }
+            }
+            if let item = document.selectedItem {
+                ButSelectedView(item: item)
+            }
+            ButBottomView(rect: rect)
+        }
+    }
+}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
