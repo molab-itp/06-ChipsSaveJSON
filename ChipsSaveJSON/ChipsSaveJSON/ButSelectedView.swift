@@ -32,7 +32,7 @@ struct ButSelectedView: View {
                 Text("AssetName:")
                 Picker("AssetName", selection: $document.itemAssetName) {
                     Text("").tag("")
-                    Text("cat").tag("cat")
+                    Text("fish").tag("fish")
                     Text("lama").tag("lama")
                 }
             }

@@ -136,7 +136,7 @@ class Document: ObservableObject
     
     func addItem(x: Int, y: Int) {
         let colorNum = randomColorNum()
-        let item = ItemModel(x: x, y: y, colorNum: colorNum)
+        let item = ItemModel(colorNum: colorNum, x: x, y: y)
         model.addItem(item)
     }
     
