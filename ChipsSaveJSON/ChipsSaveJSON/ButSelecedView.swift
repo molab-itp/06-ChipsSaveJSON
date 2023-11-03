@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonsSelectedView: View {
+struct ButSelecedView: View {
     var item: ItemModel
     
     @EnvironmentObject var document: Document
@@ -45,7 +45,7 @@ struct ButtonsSelectedView: View {
 struct ButtonsSelectedView_Previews: PreviewProvider {
     static var previews: some View {
         let document = Document()
-        ButtonsSelectedView(item: ItemModel())
+        ButSelecedView(item: ItemModel())
             .environmentObject(document)
     }
 }

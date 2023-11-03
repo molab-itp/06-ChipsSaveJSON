@@ -31,9 +31,9 @@ struct ContentView: View {
                         }
                     }
                     if let item = document.selectedItem {
-                        ButtonsSelectedView(item: item)
+                        ButSelecedView(item: item)
                     }
-                    ButtonsView(rect: rect)
+                    ButBottomView(rect: rect)
                 }
                 .padding(20)
                 .onAppear() {

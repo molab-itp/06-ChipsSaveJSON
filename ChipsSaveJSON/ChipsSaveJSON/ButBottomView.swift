@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonsView: View {
+struct ButBottomView: View {
     var rect: CGRect
     
     @EnvironmentObject var document: Document
@@ -71,7 +71,7 @@ struct ButtonsView_Previews: PreviewProvider {
     
     static var previews: some View {
         let document = Document()
-        ButtonsView(rect: CGRect(x:0,y:0,width:200,height:300))
+        ButBottomView(rect: CGRect(x:0,y:0,width:200,height:300))
             .environmentObject(document)
     }
 }
