@@ -46,9 +46,8 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let document = Document()
         ContentView()
-            .environmentObject(document)
+            .environmentObject( Document() )
     }
 }
 

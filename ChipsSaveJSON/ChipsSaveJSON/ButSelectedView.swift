@@ -44,8 +44,7 @@ struct ButSelectedView: View {
 
 struct ButtonsSelectedView_Previews: PreviewProvider {
     static var previews: some View {
-        let document = Document()
-        ButSelectedView(item: ItemModel())
-            .environmentObject(document)
+        ButSelectedView(item: ItemModel() )
+            .environmentObject( Document() )
     }
 }
