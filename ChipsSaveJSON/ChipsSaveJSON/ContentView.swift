@@ -31,7 +31,7 @@ struct ContentView: View {
                         }
                     }
                     if let item = document.selectedItem {
-                        ButSelecedView(item: item)
+                        ButSelectedView(item: item)
                     }
                     ButBottomView(rect: rect)
                 }

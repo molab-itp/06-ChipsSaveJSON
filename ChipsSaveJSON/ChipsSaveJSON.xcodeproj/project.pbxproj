@@ -17,7 +17,7 @@
 		AB53432629AC37A80071FEB3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53432129AC37A80071FEB3 /* Model.swift */; };
 		AB53432729AC37A80071FEB3 /* ModelJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53432229AC37A80071FEB3 /* ModelJSON.swift */; };
 		AB8272F629AE713600D55AEB /* ButBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8272F529AE713600D55AEB /* ButBottomView.swift */; };
-		AB8272F829AE72CA00D55AEB /* ButSelecedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8272F729AE72CA00D55AEB /* ButSelecedView.swift */; };
+		AB8272F829AE72CA00D55AEB /* ButSelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8272F729AE72CA00D55AEB /* ButSelectedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		AB53432229AC37A80071FEB3 /* ModelJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelJSON.swift; sourceTree = "<group>"; };
 		AB8272F429AE651A00D55AEB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		AB8272F529AE713600D55AEB /* ButBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButBottomView.swift; sourceTree = "<group>"; };
-		AB8272F729AE72CA00D55AEB /* ButSelecedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButSelecedView.swift; sourceTree = "<group>"; };
+		AB8272F729AE72CA00D55AEB /* ButSelectedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButSelectedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +69,7 @@
 			children = (
 				AB53431029AC37650071FEB3 /* ChipsSaveJSONApp.swift */,
 				AB53431229AC37650071FEB3 /* ContentView.swift */,
-				AB8272F729AE72CA00D55AEB /* ButSelecedView.swift */,
+				AB8272F729AE72CA00D55AEB /* ButSelectedView.swift */,
 				AB8272F529AE713600D55AEB /* ButBottomView.swift */,
 				AB53431E29AC37A80071FEB3 /* ItemView.swift */,
 				AB53432029AC37A80071FEB3 /* Document.swift */,
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB53432729AC37A80071FEB3 /* ModelJSON.swift in Sources */,
-				AB8272F829AE72CA00D55AEB /* ButSelecedView.swift in Sources */,
+				AB8272F829AE72CA00D55AEB /* ButSelectedView.swift in Sources */,
 				AB53431329AC37650071FEB3 /* ContentView.swift in Sources */,
 				AB53432429AC37A80071FEB3 /* FormatString.swift in Sources */,
 				AB53432329AC37A80071FEB3 /* ItemView.swift in Sources */,
