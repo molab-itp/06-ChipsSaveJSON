@@ -53,13 +53,15 @@ struct ItemModel: Identifiable, Hashable, Encodable, Decodable {
     }
 }
 
+// Convert color to 32 bit argb integer
 func colorNum_(color: Color) -> Int {
-    if let cgColor = color.cgColor {
+    if let cgColor = color.cgColor, 
         let cc = cgColor.components
-        let r = Int(cc![0] * 255.0)
-        let g = Int(cc![1] * 255.0)
-        let b = Int(cc![2] * 255.0)
-        let a = Int(cc![3] * 255.0)
+    {
+        let r = Int(cc[0] * 255.0)
+        let g = Int(cc[1] * 255.0)
+        let b = Int(cc[2] * 255.0)
+        let a = Int(cc[3] * 255.0)
         print("colorNum cc \(String(describing: cc))")
         return ((a << 24) | (r << 16) | (g << 8) | b)
     }
@@ -69,6 +71,7 @@ func colorNum_(color: Color) -> Int {
     }
 }
 
+// Covert from integer argb to Color
 func color_(colorNum: Int) -> Color {
     let a = Double((colorNum >> 24) & 255)/255.0
     let r = Double((colorNum >> 16) & 255)/255.0
@@ -77,6 +80,7 @@ func color_(colorNum: Int) -> Color {
     return Color(.displayP3, red: r, green: g, blue: b, opacity: a)
 }
 
+// Return a random argb color integer
 func randomColorNum_rgb() -> Int {
     let r = Int.random(in:0...255)
     let g = Int.random(in:0...255)
@@ -84,8 +88,10 @@ func randomColorNum_rgb() -> Int {
     return (255 << 24) | (r << 16) | (g << 8) | b
 }
 
+// Fixed colors red, green, yellow, black, white
 let colorNums = [0xFFFF0000, 0xFF00FF00, 0xFFFFFF00, 0xFF000000, 0xFFFFFFFF]
 
+// Return a random fixed color
 func randomColorNum_colorNums() -> Int {
     let i = Int.random(in:0..<colorNums.count)
     return colorNums[i]
