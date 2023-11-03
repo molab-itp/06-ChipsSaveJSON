@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct Model: Encodable, Decodable {
+struct Model: Codable {
     var items: [ItemModel]
     var uniqueId = 0
     
