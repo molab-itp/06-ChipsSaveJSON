@@ -36,11 +36,6 @@ struct RowOne: View {
                     document.addItems(rect: rect, count: 8)
                 }
             }
-            Button("Shake") {
-                withAnimation {
-                    document.shakeDemo(rect: rect);
-                }
-            }
             Button("Color") {
                 withAnimation {
                     document.setRandomColor();

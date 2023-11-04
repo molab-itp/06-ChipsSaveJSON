@@ -128,20 +128,20 @@ class Document: ObservableObject
         selectedId = 0
         model.reset()
     }
-    
-    func addItem(rect: CGRect) {
-        let x = Int(rect.width / 2);
-        let y = Int(rect.height / 2);
-        addItem(x: x, y: y)
-    }
-    
+
     func addItem(x: Int, y: Int) {
         let colorNum = randomColorNum()
         let assetName = randomAssetName();
         let item = ItemModel(colorNum: colorNum, x: x, y: y, assetName: assetName)
         model.addItem(item)
     }
-    
+
+    func addItem(rect: CGRect) {
+        let x = Int(rect.width / 2);
+        let y = Int(rect.height / 2);
+        addItem(x: x, y: y)
+    }
+        
     func addItems(rect: CGRect, count:Int) {
         let len = 50
         let bottom = Int(rect.height - 250.0)
