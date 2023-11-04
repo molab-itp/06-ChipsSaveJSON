@@ -10,7 +10,9 @@ class Document: ObservableObject
     @Published var selectedId: Int = 0
     @Published var selectedPalette:Palette = .rgb
     
-    var selectedItem: ItemModel? { model.item(id: selectedId) }
+    var selectedItem: ItemModel? {
+        model.item(id: selectedId)
+    }
     
     init() {
         model = Model()
@@ -65,7 +67,6 @@ class Document: ObservableObject
             }
         }
     }
-    
     
     func select(id: Int, state:Bool) {
         for index in  0..<model.items.count {
@@ -183,14 +184,12 @@ class Document: ObservableObject
         }
     }
         
-    
     func addInitalItem(rect: CGRect) {
         let x = rect.width / 2;
         let y = rect.height / 2;
         let item = ItemModel(x: Int(x), y: Int(y))
         model.addItem(item)
     }
-    
     
     func shakeDemo(rect: CGRect) {
         for index in  0..<model.items.count {
