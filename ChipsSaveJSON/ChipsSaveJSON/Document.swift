@@ -192,7 +192,7 @@ class Document: ObservableObject
     }
     
     
-    func shakeDemo() {
+    func shakeDemo(rect: CGRect) {
         for index in  0..<model.items.count {
             //      let item = model.items[index];
             //      model.items[index].x = item.x + Int.random(in:-2...2)

@@ -39,7 +39,7 @@ struct RowOne: View {
             }
             Button("Shake") {
                 withAnimation {
-                    document.shakeDemo();
+                    document.shakeDemo(rect: rect);
                 }
             }
             Button("Color") {
