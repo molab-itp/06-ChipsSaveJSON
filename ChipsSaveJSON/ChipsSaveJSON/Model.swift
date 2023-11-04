@@ -77,7 +77,7 @@ func color_(colorNum: Int) -> Color {
 
 // Pick a random color depending on the selectedPalette
 func randomColorNum() -> Int {
-    return randomColorNum_fixedColors()
+    return randomColorNum_freedomColors()
 //    return randomColorNum_rgb()
 }
 
@@ -89,13 +89,13 @@ func randomColorNum_rgb() -> Int {
     return (255 << 24) | (r << 16) | (g << 8) | b
 }
 
-// Fixed colors red, green, yellow, black
-let fixedColors = [0xFFFF0000, 0xFF00FF00, 0xFFFFFF00, 0xFF000000]
+// Freedom colors red, gold, green, black
+let freedomColors = [0xFFFF0000, 0xFFF0F000, 0xFF00FF00, 0xFF000000]
 
 // Return a random fixed color
-func randomColorNum_fixedColors() -> Int {
-    let index = Int.random(in:0..<fixedColors.count)
-    return fixedColors[index]
+func randomColorNum_freedomColors() -> Int {
+    let index = Int.random(in:0..<freedomColors.count)
+    return freedomColors[index]
 }
 
 // Return a random asset name
