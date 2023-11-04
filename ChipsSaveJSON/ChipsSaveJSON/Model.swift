@@ -91,3 +91,9 @@ func randomColorNum_colorNums() -> Int {
     let i = Int.random(in:0..<colorNums.count)
     return colorNums[i]
 }
+
+// Return a random asset name
+func randomAssetName() -> String {
+    return ""
+    // return ["", "fish", "lama"].randomElement()!;
+}
