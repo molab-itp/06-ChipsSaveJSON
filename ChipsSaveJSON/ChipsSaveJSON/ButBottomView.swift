@@ -60,6 +60,11 @@ struct RowTwo: View {
 //                Text("rgb").tag(Palette.rgb)
 //                Text("fixed").tag(Palette.fixed)
 //            }
+            Button("Shake") {
+                withAnimation {
+                    document.shakeDemo(rect: rect);
+                }
+            }
             Button("Clear") {
                 withAnimation {
                     document.clear();

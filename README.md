@@ -11,3 +11,4 @@
 - TRY: adjust randomAssetName
 - TRY: adjust randomColorNum
 - WHY: clips overflow y location when +1, then +8 repeatedly
+- WHY: repeated Shake will vanish

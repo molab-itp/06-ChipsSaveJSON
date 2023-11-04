@@ -201,11 +201,12 @@ class Document: ObservableObject
     }
     
     func shakeDemo(rect: CGRect) {
+        let bottom = Int(rect.height - bottomMargin)
         for index in  0..<model.items.count {
             let a = 45.0;
             model.items[index].rotation = Double.random(in:-a...a)
             model.items[index].x = Int.random(in:0...Int(rect.width))
-            model.items[index].y = Int.random(in:0...Int(rect.height))
+            model.items[index].y = Int.random(in:0...Int(bottom))
             update(index: index, sizeBy: Double.random(in:0.5...1.5))
         }
         model.items.shuffle()
