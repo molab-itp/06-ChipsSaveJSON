@@ -2,14 +2,9 @@
 import SwiftUI
 
 struct Model: Codable {
-    var items: [ItemModel]
+    var items: [ItemModel] = []
     var uniqueId = 0
-    
-    init () {
-        items = []
-        self.reset();
-    }
-    
+        
     mutating func reset () {
         uniqueId = 0
         items = []

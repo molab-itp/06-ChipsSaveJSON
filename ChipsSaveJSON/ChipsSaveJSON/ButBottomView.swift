@@ -18,7 +18,6 @@ struct ButBottomView: View {
             RowTwo(rect: rect)
             Text("frame \(format(rect))")
         }
-        
     }
 }
 
