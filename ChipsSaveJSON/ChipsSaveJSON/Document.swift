@@ -182,33 +182,7 @@ class Document: ObservableObject
             }
         }
     }
-    
-    // Pick a random color from a full range of colors
-    func randomColorNum_rgb() -> Int {
-        let r = Int.random(in:0...255)
-        let g = Int.random(in:0...255)
-        let b = Int.random(in:0...255)
-        return (255 << 24) | (r << 16) | (g << 8) | b
-    }
-    
-    // A platte with a small number of fixed colors
-    let colorNums = [0xFFFF0000, 0xFF00FF00, 0xFFFFFF00, 0xFF000000, 0xFFFFFFFF]
-    
-    // Pick a random color from the fixed colors
-    func randomColorNum_colorNums() -> Int {
-        let i = Int.random(in:0..<colorNums.count)
-        return colorNums[i]
-    }
-    
-    // Pick a random color depending on the selectedPalette
-    func randomColorNum() -> Int {
-        if selectedPalette == .fixed {
-            return randomColorNum_colorNums()
-        }
-        else {
-            return randomColorNum_rgb()
-        }
-    }
+        
     
     func addInitalItem(rect: CGRect) {
         let x = rect.width / 2;

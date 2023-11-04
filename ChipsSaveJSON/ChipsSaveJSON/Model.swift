@@ -75,6 +75,12 @@ func color_(colorNum: Int) -> Color {
     return Color(.displayP3, red: r, green: g, blue: b, opacity: a)
 }
 
+// Pick a random color depending on the selectedPalette
+func randomColorNum() -> Int {
+    return randomColorNum_fixedColors()
+//    return randomColorNum_rgb()
+}
+
 // Return a random argb color integer
 func randomColorNum_rgb() -> Int {
     let r = Int.random(in:0...255)
@@ -83,13 +89,13 @@ func randomColorNum_rgb() -> Int {
     return (255 << 24) | (r << 16) | (g << 8) | b
 }
 
-// Fixed colors red, green, yellow, black, white
-let colorNums = [0xFFFF0000, 0xFF00FF00, 0xFFFFFF00, 0xFF000000, 0xFFFFFFFF]
+// Fixed colors red, green, yellow, black
+let fixedColors = [0xFFFF0000, 0xFF00FF00, 0xFFFFFF00, 0xFF000000]
 
 // Return a random fixed color
-func randomColorNum_colorNums() -> Int {
-    let i = Int.random(in:0..<colorNums.count)
-    return colorNums[i]
+func randomColorNum_fixedColors() -> Int {
+    let index = Int.random(in:0..<fixedColors.count)
+    return fixedColors[index]
 }
 
 // Return a random asset name

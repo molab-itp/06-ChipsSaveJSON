@@ -8,5 +8,6 @@
     
 - Reading and writing JSON file to local storage
 
-- TRY: change randomAssetName
+- TRY: adjust randomAssetName
+- TRY: adjust randomColorNum
 
