@@ -10,6 +10,8 @@ class Document: ObservableObject
     @Published var selectedId: Int = 0
     @Published var selectedPalette:Palette = .rgb
     
+    let bottomMargin = 150.0;
+    
     var selectedItem: ItemModel? {
         model.item(id: selectedId)
     }
@@ -144,7 +146,7 @@ class Document: ObservableObject
         
     func addItems(rect: CGRect, count:Int) {
         let len = 50
-        let bottom = Int(rect.height - 250.0)
+        let bottom = Int(rect.height - bottomMargin)
         var x = 0
         var y = 0
         if items.count > 0 {
