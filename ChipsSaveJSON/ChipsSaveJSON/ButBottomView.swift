@@ -26,7 +26,7 @@ struct RowOne: View {
     @EnvironmentObject var document: Document
     var body: some View {
         HStack {
-            Button("Add") {
+            Button("+1") {
                 withAnimation {
                     document.addItem(rect: rect)
                 }

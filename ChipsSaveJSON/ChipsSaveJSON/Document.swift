@@ -132,6 +132,7 @@ class Document: ObservableObject
     }
 
     func addItem(x: Int, y: Int) {
+        print("addItems x y", x, y)
         let colorNum = randomColorNum()
         let assetName = randomAssetName();
         let item = ItemModel(colorNum: colorNum, x: x, y: y, assetName: assetName)
@@ -139,14 +140,17 @@ class Document: ObservableObject
     }
 
     func addItem(rect: CGRect) {
+        print("addItems rect", rect)
         let x = Int(rect.width / 2);
         let y = Int(rect.height / 2);
         addItem(x: x, y: y)
     }
         
     func addItems(rect: CGRect, count:Int) {
+        print("addItems rect", rect, "count", count)
         let len = 50
         let bottom = Int(rect.height - bottomMargin)
+        print("addItems bottom", bottom)
         var x = 0
         var y = 0
         if items.count > 0 {
@@ -156,6 +160,9 @@ class Document: ObservableObject
             if x > Int(rect.width) {
                 x = 0
                 y += len;
+                if y + len > bottom {
+                    y = 0
+                }
             }
         }
         for _ in 0..<count {
