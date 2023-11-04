@@ -141,8 +141,9 @@ class Document: ObservableObject
 
     func addItem(rect: CGRect) {
         print("addItems rect", rect)
-        let x = Int(rect.width / 2);
-        let y = Int(rect.height / 2);
+        let bottom = Int(rect.height - bottomMargin)
+        let x = Int.random(in:0...Int(rect.width));
+        let y = Int.random(in:0...Int(bottom))
         addItem(x: x, y: y)
     }
         
