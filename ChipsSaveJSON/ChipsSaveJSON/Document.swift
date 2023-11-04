@@ -200,6 +200,9 @@ class Document: ObservableObject
             let a = 45.0;
             model.items[index].rotation = Double.random(in:-a...a)
             update(index: index, sizeBy: Double.random(in:0.5...1.5))
+            model.items[index].x = Int.random(in:0...Int(rect.width))
+            model.items[index].y = Int.random(in:0...Int(rect.height))
+
         }
         model.items.shuffle()
     }
