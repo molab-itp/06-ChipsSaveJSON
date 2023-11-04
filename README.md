@@ -3,7 +3,8 @@
 - Use of class and struct to manage persistent state
     - class Document: ObservableObject
     - struct Model
-    - EnvironmentObject
+    
+- Use @EnvironmentObject to pass global info
     
 - Reading and writing JSON file to local storage
 
