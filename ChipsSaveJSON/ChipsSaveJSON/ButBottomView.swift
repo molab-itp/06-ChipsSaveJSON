@@ -37,11 +37,6 @@ struct RowOne: View {
                     document.addItems(rect: rect, count: 8)
                 }
             }
-            Button("Clear") {
-                withAnimation {
-                    document.clear();
-                }
-            }
             Button("Shake") {
                 withAnimation {
                     document.shakeDemo();
@@ -49,7 +44,12 @@ struct RowOne: View {
             }
             Button("Color") {
                 withAnimation {
-                    document.colorDemo();
+                    document.setRandomColor();
+                }
+            }
+            Button("Back") {
+                withAnimation {
+                    document.sendToBack();
                 }
             }
         }
@@ -62,13 +62,13 @@ struct RowTwo: View {
     @EnvironmentObject var document: Document
     var body: some View {
         HStack {
-            Picker("Palette", selection: $document.selectedPalette) {
-                Text("rgb").tag(Palette.rgb)
-                Text("fixed").tag(Palette.fixed)
-            }
-            Button("Move-Back") {
+//            Picker("Palette", selection: $document.selectedPalette) {
+//                Text("rgb").tag(Palette.rgb)
+//                Text("fixed").tag(Palette.fixed)
+//            }
+            Button("Clear") {
                 withAnimation {
-                    document.sendToBack();
+                    document.clear();
                 }
             }
             Button("Save") {

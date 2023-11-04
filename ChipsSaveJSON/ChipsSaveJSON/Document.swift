@@ -204,7 +204,7 @@ class Document: ObservableObject
         model.items.shuffle()
     }
     
-    func colorDemo() {
+    func setRandomColor() {
         for index in  0..<model.items.count {
             model.items[index].colorNum = randomColorNum();
         }
