@@ -33,7 +33,6 @@ struct RowOne: View {
             }
             Button("+8") {
                 withAnimation {
-                    //document.clear();
                     document.addItems(rect: rect, count: 8)
                 }
             }
