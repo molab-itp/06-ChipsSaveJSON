@@ -44,7 +44,6 @@ struct ItemView: View {
             if (item.selected) {
                 Rectangle()
                     .stroke(lineWidth: 5)
-                
             }
             Rectangle()
                 .fill(item.color)
@@ -63,5 +62,12 @@ struct ItemView: View {
         .rotationEffect(.degrees(item.rotation))
         .animation(.linear, value:item.rotation)
         .position(position)
+    }
+}
+
+struct ItemDragView_Previews: PreviewProvider {
+    static var previews: some View {
+        ItemDragView(item: ItemModel())
+            .environmentObject( Document() )
     }
 }
