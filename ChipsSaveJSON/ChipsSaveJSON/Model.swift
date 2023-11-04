@@ -77,8 +77,8 @@ func color_(colorNum: Int) -> Color {
 
 // Pick a random color depending on the selectedPalette
 func randomColorNum() -> Int {
-//    return randomColorNum_freedomColors()
-    return randomColorNum_rgb()
+    return randomColorNum_freedomColors()
+//    return randomColorNum_rgb()
 }
 
 // Return a random argb color integer
