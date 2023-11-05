@@ -204,11 +204,16 @@ class Document: ObservableObject
     func shakeDemo(rect: CGRect) {
         let bottom = Int(rect.height - bottomMargin)
         for index in  0..<model.items.count {
-            let a = 45.0;
-            model.items[index].rotation = Double.random(in:-a...a)
+            let angle = 45.0;
+            model.items[index].rotation = Double.random(in:-angle...angle)
             model.items[index].x = Int.random(in:0...Int(rect.width))
             model.items[index].y = Int.random(in:0...Int(bottom))
             update(index: index, sizeBy: Double.random(in:0.5...1.5))
+            // WHY: fail
+            // var item = model.items[index]
+            // item.rotation = Double.random(in:-angle...angle)
+            // item.x = Int.random(in:0...Int(rect.width))
+            // item.y = Int.random(in:0...Int(bottom))
         }
         model.items.shuffle()
     }
