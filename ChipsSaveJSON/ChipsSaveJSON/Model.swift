@@ -77,8 +77,8 @@ func color_(colorNum: Int) -> Color {
 
 // Pick a random color depending on the selectedPalette
 func randomColorNum() -> Int {
-    return randomColorNum_freedomColors()
-//    return randomColorNum_rgb()
+    return randomColorNum_freedomColors() // !!@ Try
+//    return randomColorNum_rgb() // !!@ Try
 }
 
 // Return a random argb color integer
@@ -100,6 +100,6 @@ func randomColorNum_freedomColors() -> Int {
 
 // Return a random asset name
 func randomAssetName() -> String {
-    return ""
-    // return ["", "fish", "lama"].randomElement()!;
+    return "" // !!@ Try
+    // return ["", "fish", "lama"].randomElement()!; // !!@ Try
 }

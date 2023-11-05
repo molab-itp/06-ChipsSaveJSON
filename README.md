@@ -8,7 +8,7 @@
     
 - Reading and writing JSON file to local storage
 
-- TRY: adjust randomAssetName() -> String 
-- TRY: adjust randomColorNum() -> Int 
+- !!@ Try: adjust randomAssetName() -> String 
+- !!@ Try: adjust randomColorNum() -> Int 
 - WHY: clips overflow y location when +1, then +8 repeatedly
-- WHY: repeated Shake will vanish
+- WHY: repeated Shake will vanish clips
