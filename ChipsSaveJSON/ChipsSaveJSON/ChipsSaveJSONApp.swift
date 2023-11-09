@@ -15,6 +15,7 @@ struct ChipsSaveJSONApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(document)
+            
         }
     }
 }

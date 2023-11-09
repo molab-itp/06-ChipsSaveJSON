@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8DB464472AFD31C5002769F8 /* ButtonFirstRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB464462AFD31C5002769F8 /* ButtonFirstRow.swift */; };
+		8DB464492AFD346B002769F8 /* ButtonSecondRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB464482AFD346B002769F8 /* ButtonSecondRow.swift */; };
 		AB53431129AC37650071FEB3 /* ChipsSaveJSONApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53431029AC37650071FEB3 /* ChipsSaveJSONApp.swift */; };
 		AB53431329AC37650071FEB3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53431229AC37650071FEB3 /* ContentView.swift */; };
 		AB53431529AC37650071FEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB53431429AC37650071FEB3 /* Assets.xcassets */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8DB464462AFD31C5002769F8 /* ButtonFirstRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFirstRow.swift; sourceTree = "<group>"; };
+		8DB464482AFD346B002769F8 /* ButtonSecondRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSecondRow.swift; sourceTree = "<group>"; };
 		AB53430D29AC37650071FEB3 /* ChipsSaveJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChipsSaveJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB53431029AC37650071FEB3 /* ChipsSaveJSONApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsSaveJSONApp.swift; sourceTree = "<group>"; };
 		AB53431229AC37650071FEB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 			children = (
 				AB53431029AC37650071FEB3 /* ChipsSaveJSONApp.swift */,
 				AB53431229AC37650071FEB3 /* ContentView.swift */,
+				8DB464482AFD346B002769F8 /* ButtonSecondRow.swift */,
+				8DB464462AFD31C5002769F8 /* ButtonFirstRow.swift */,
 				AB53431E29AC37A80071FEB3 /* ItemView.swift */,
 				AB53432029AC37A80071FEB3 /* Document.swift */,
 				AB53432129AC37A80071FEB3 /* Model.swift */,
@@ -157,8 +163,10 @@
 				AB53432729AC37A80071FEB3 /* ModelJSON.swift in Sources */,
 				AB53431329AC37650071FEB3 /* ContentView.swift in Sources */,
 				AB53432429AC37A80071FEB3 /* FormatString.swift in Sources */,
+				8DB464472AFD31C5002769F8 /* ButtonFirstRow.swift in Sources */,
 				AB53432329AC37A80071FEB3 /* ItemView.swift in Sources */,
 				AB53432629AC37A80071FEB3 /* Model.swift in Sources */,
+				8DB464492AFD346B002769F8 /* ButtonSecondRow.swift in Sources */,
 				AB53431129AC37650071FEB3 /* ChipsSaveJSONApp.swift in Sources */,
 				AB53432529AC37A80071FEB3 /* Document.swift in Sources */,
 			);
