@@ -35,6 +35,6 @@ struct ButtonSecondRow: View {
 
 #Preview {
     ButtonSecondRow()
-    ButtonSecondRow(CGRect(x: 10, y: 10, width: 200, height: 100))
+    ButtonSecondRow(rect: CGRect(x: 10, y: 10, width: 200, height: 100))
         .environmentObject(Document())
 }
