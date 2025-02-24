@@ -4,11 +4,11 @@
 
 import SwiftUI
 
-class Document: ObservableObject
+@Observable class Document
 {
-    @Published var model: Model
-    @Published var selectedId: Int = 0
-    @Published var selectedPalette:Palette = .rgb
+    var model: Model
+  var selectedId: Int = 0
+  var selectedPalette:Palette = .rgb
     
     var selectedItem: ItemModel? { model.item(id: selectedId) }
     

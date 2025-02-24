@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct ChipsSaveJSONApp: App {
-    @StateObject var document = Document()
+    @State var document = Document()
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(document)
+          ContentView(document: document)
+                .environment(document)
         }
     }
 }

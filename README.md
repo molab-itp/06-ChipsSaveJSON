@@ -1,9 +1,15 @@
-# 06-ChipsSaveJSON
+# [06-ChipsSaveJSON](https://github.com/mobilelabclass-itp/06-ChipsSaveJSON.git)
 
 - Use of class and struct to manage persistent state
-    - class Document: ObservableObject
+    - @Observable class Document
     - struct Model
     - EnvironmentObject
     
 - Reading and writing JSON file to local storage
+
+
+##
+
+- crash in preview after Add
+
 

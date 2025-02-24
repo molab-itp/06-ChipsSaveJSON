@@ -6,8 +6,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    
-    @EnvironmentObject var document: Document
+    @Bindable var document: Document
+//  @Environment(Document.self) var document
     
     var body: some View {
         GeometryReader { geometry in
@@ -114,12 +114,9 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        let document = Document()
-        ContentView()
-            .environmentObject(document)
-    }
+#Preview {
+  ContentView(document: Document())
+//    .environment(Document())
 }
 
 //PlaygroundPage.current.setLiveView(ExampleView())

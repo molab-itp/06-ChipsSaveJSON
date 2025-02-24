@@ -4,7 +4,7 @@ import SwiftUI
 struct ItemDragView: View {
     var item: ItemModel
     
-    @EnvironmentObject var document: Document
+  @Environment(Document.self) var document
     
     var body: some View {
         ItemView(item: item, position: positionOffset())
@@ -37,8 +37,8 @@ struct ItemView: View {
     var item: ItemModel
     var position: CGPoint;
     
-    @EnvironmentObject var document: Document
-    
+  @Environment(Document.self) var document
+
     var body: some View {
         ZStack {
             if (item.selected) {
