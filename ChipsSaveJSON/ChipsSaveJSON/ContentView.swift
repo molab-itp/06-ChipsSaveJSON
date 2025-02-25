@@ -115,9 +115,6 @@ struct ContentView: View {
 }
 
 #Preview {
-  //  ContentView(document: Document())
   ContentView()
     .environment(Document())
 }
-
-//PlaygroundPage.current.setLiveView(ExampleView())
