@@ -13,7 +13,8 @@ struct ChipsSaveJSONApp: App {
     
     var body: some Scene {
         WindowGroup {
-          ContentView(document: document)
+          ContentView()
+//          ContentView(document: document)
                 .environment(document)
         }
     }

@@ -6,8 +6,8 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Bindable var document: Document
-//  @Environment(Document.self) var document
+//    @Bindable var document: Document
+  @Environment(Document.self) var document
     
     var body: some View {
         GeometryReader { geometry in
@@ -33,6 +33,7 @@ struct ContentView: View {
                     if let item = document.selectedItem {
                         Text("x \(item.x) y \(item.y) color \(item.colorName)")
                         HStack {
+                          @Bindable var document = document
                             ColorPicker("Color", selection: $document.itemColor)
                             Button("Rotate") {
                                 document.update(id: document.selectedId, rotationBy: 45.0)
@@ -46,6 +47,8 @@ struct ContentView: View {
                         }
                         .buttonStyle(.bordered)
                         HStack {
+                          @Bindable var document = document
+
                             Text("AssetName:")
                             Picker("AssetName", selection: $document.itemAssetName) {
                                 Text("").tag("")
@@ -86,6 +89,8 @@ struct ContentView: View {
                     }
                     .buttonStyle(.bordered)
                     HStack {
+                      @Bindable var document = document
+
                         Picker("Palette", selection: $document.selectedPalette) {
                             Text("rgb").tag(Palette.rgb)
                             Text("fixed").tag(Palette.fixed)
@@ -115,8 +120,9 @@ struct ContentView: View {
 }
 
 #Preview {
-  ContentView(document: Document())
-//    .environment(Document())
+//  ContentView(document: Document())
+  ContentView()
+    .environment(Document())
 }
 
 //PlaygroundPage.current.setLiveView(ExampleView())

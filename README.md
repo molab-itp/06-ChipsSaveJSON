@@ -7,9 +7,6 @@
     
 - Reading and writing JSON file to local storage
 
-
 ##
-
-- crash in preview after Add
 
 
