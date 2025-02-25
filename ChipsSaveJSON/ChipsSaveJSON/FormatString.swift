@@ -9,15 +9,15 @@ import SwiftUI
 
 // Format double to string
 func format(_ v: Double) -> String {
-    String(format: "%.1f", v)
+  String(format: "%.1f", v)
 }
 
 // Format point to string
 func format(_ pt: CGPoint) -> String {
-    "\(format(pt.x)) \(format(pt.y))"
+  "\(format(pt.x)) \(format(pt.y))"
 }
 
 // Format rect to string
 func format(_ rt: CGRect) -> String {
-    "\(format(rt.origin.x)) \(format(rt.origin.y)) \(format(rt.size.width)) \(format(rt.size.height))"
+  "\(format(rt.origin.x)) \(format(rt.origin.y)) \(format(rt.size.width)) \(format(rt.size.height))"
 }

@@ -2,9 +2,9 @@
 
 - Use of class and struct to manage persistent state
     - @Observable class Document
+    - @Environment to share data model
     - struct Model
-    - EnvironmentObject
-    
+
 - Reading and writing JSON file to local storage
 
 ##
