@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ChipsSaveJSONApp: App {
+struct MySaveJSONApp: App {
   @State var document = Document()
 
   var body: some Scene {
