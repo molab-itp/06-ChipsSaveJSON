@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AB53430D29AC37650071FEB3 /* ChipsSaveJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChipsSaveJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB53430D29AC37650071FEB3 /* MySaveJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySaveJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB53431029AC37650071FEB3 /* ChipsSaveJSONApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsSaveJSONApp.swift; sourceTree = "<group>"; };
 		AB53431229AC37650071FEB3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AB53431429AC37650071FEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		AB53430E29AC37650071FEB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AB53430D29AC37650071FEB3 /* ChipsSaveJSON.app */,
+				AB53430D29AC37650071FEB3 /* MySaveJSON.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,9 +87,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AB53430C29AC37650071FEB3 /* ChipsSaveJSON */ = {
+		AB53430C29AC37650071FEB3 /* MySaveJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AB53431B29AC37650071FEB3 /* Build configuration list for PBXNativeTarget "ChipsSaveJSON" */;
+			buildConfigurationList = AB53431B29AC37650071FEB3 /* Build configuration list for PBXNativeTarget "MySaveJSON" */;
 			buildPhases = (
 				AB53430929AC37650071FEB3 /* Sources */,
 				AB53430A29AC37650071FEB3 /* Frameworks */,
@@ -99,9 +99,9 @@
 			);
 			dependencies = (
 			);
-			name = ChipsSaveJSON;
+			name = MySaveJSON;
 			productName = ChipsSaveJSON;
-			productReference = AB53430D29AC37650071FEB3 /* ChipsSaveJSON.app */;
+			productReference = AB53430D29AC37650071FEB3 /* MySaveJSON.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AB53430829AC37650071FEB3 /* Build configuration list for PBXProject "ChipsSaveJSON" */;
+			buildConfigurationList = AB53430829AC37650071FEB3 /* Build configuration list for PBXProject "MySaveJSON" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -132,7 +132,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AB53430C29AC37650071FEB3 /* ChipsSaveJSON */,
+				AB53430C29AC37650071FEB3 /* MySaveJSON */,
 			);
 		};
 /* End PBXProject section */
@@ -344,7 +344,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AB53430829AC37650071FEB3 /* Build configuration list for PBXProject "ChipsSaveJSON" */ = {
+		AB53430829AC37650071FEB3 /* Build configuration list for PBXProject "MySaveJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB53431929AC37650071FEB3 /* Debug */,
@@ -353,7 +353,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AB53431B29AC37650071FEB3 /* Build configuration list for PBXNativeTarget "ChipsSaveJSON" */ = {
+		AB53431B29AC37650071FEB3 /* Build configuration list for PBXNativeTarget "MySaveJSON" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AB53431C29AC37650071FEB3 /* Debug */,
