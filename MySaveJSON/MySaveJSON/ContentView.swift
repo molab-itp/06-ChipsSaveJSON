@@ -35,13 +35,13 @@ struct ContentView: View {
             HStack {
               ColorPicker("Color", selection: $document.itemColor)
               Button("Rotate") {
-                document.update(id: document.selectedId, rotationBy: 45.0)
+                document.update(id: item.id, rotationBy: 45.0)
               }
               Button("+Size") {
-                document.update(id: document.selectedId, sizeBy: 1.1)
+                document.update(id: item.id, sizeBy: 1.1)
               }
               Button("-Size") {
-                document.update(id: document.selectedId, sizeBy: 0.9)
+                document.update(id: item.id, sizeBy: 0.9)
               }
             }
             .buttonStyle(.bordered)
