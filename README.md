@@ -7,6 +7,11 @@
 
 - Reading and writing JSON file to local storage
 
-##
+## Notes
+
+```
+- Convert to Folder on ClipsSaveJSON folder for better interop with ai chat
+
+```
 
 
