@@ -47,7 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				AB8272F429AE651A00D55AEB /* README.md */,
-				AB53430F29AC37650071FEB3 /* ChipsSaveJSON */,
+				AB53430F29AC37650071FEB3 /* MySaveJSON */,
 				AB53430E29AC37650071FEB3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,7 +60,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		AB53430F29AC37650071FEB3 /* ChipsSaveJSON */ = {
+		AB53430F29AC37650071FEB3 /* MySaveJSON */ = {
 			isa = PBXGroup;
 			children = (
 				AB53431029AC37650071FEB3 /* ChipsSaveJSONApp.swift */,
@@ -73,7 +73,7 @@
 				AB53431429AC37650071FEB3 /* Assets.xcassets */,
 				AB53431629AC37650071FEB3 /* Preview Content */,
 			);
-			path = ChipsSaveJSON;
+			path = MySaveJSON;
 			sourceTree = "<group>";
 		};
 		AB53431629AC37650071FEB3 /* Preview Content */ = {
@@ -288,7 +288,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChipsSaveJSON/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MySaveJSON/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -303,7 +303,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jht1900.ChipsSaveJSON;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jht1900.MySaveJSON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -318,7 +318,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ChipsSaveJSON/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MySaveJSON/Preview Content\"";
 				DEVELOPMENT_TEAM = 3RCW2SSL8G;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -333,7 +333,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jht1900.ChipsSaveJSON;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jht1900.MySaveJSON;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
