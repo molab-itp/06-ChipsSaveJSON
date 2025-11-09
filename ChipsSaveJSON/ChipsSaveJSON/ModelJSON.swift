@@ -14,9 +14,8 @@ extension Model {
           in: .userDomainMask,
           appropriateFor: nil,
           create: true)
-        as URL
-      let filePath = directory.appendingPathComponent(fileName)
-      print("saveAsJSON filePath \(filePath as Any)")
+      let fileUrl = directory.appendingPathComponent(fileName)
+      print("saveAsJSON filePath \(fileUrl as Any)")
 
       let encoder = JSONEncoder()
       encoder.outputFormatting = .prettyPrinted
@@ -27,7 +26,7 @@ extension Model {
       let str = String(data: jsonData, encoding: .utf8)!
       // print("Model saveAsJSON encode str \(str)")
 
-      try str.write(to: filePath, atomically: true, encoding: .utf8)
+      try str.write(to: fileUrl, atomically: true, encoding: .utf8)
       //
     } catch {
       fatalError("Model saveAsJSON error \(error)")
@@ -44,16 +43,15 @@ extension Model {
           in: .userDomainMask,
           appropriateFor: nil,
           create: true)
-        as URL
-      let filePath = directory.appendingPathComponent(fileName)
-      let filePathExists = fileMan.fileExists(atPath: filePath.path)
+      let fileUrl = directory.appendingPathComponent(fileName)
+      let filePathExists = fileMan.fileExists(atPath: fileUrl.path)
       if !filePathExists {
-        print("Model init not filePath \(filePath as Any)")
+        print("Model init not filePath \(fileUrl as Any)")
         return
       }
-      print("Model init filePath \(filePath as Any)")
+      print("Model init filePath \(fileUrl as Any)")
 
-      let jsonData = try String(contentsOfFile: filePath.path).data(
+      let jsonData = try String(contentsOfFile: fileUrl.path).data(
         using: .utf8)
 
       let decoder = JSONDecoder()
