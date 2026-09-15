@@ -8,12 +8,6 @@ extension Model {
 
   func saveAsJSON(fileName: String) {
     do {
-//      let directory =
-//        try FileManager.default.url(
-//          for: .documentDirectory,
-//          in: .userDomainMask,
-//          appropriateFor: nil,
-//          create: true)
       let directory = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first
 
       let fileUrl = directory!.appendingPathComponent(fileName)
